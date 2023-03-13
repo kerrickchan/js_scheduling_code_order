@@ -1,5 +1,16 @@
 # Javascript Scheduling Code Order
+
+## Question
+Running order of below codes
+```javascript
+setTimeout(() => console.log('timeout'), 5000);
+setInterval(() => console.log('interval'), 5000);
+setImmediate(() => console.log('immmediate'));
+console.log('log');
 ```
+
+## Answer
+```bash
 log
 immmediate
 timeout
